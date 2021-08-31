@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cars</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <script src="https://kit.fontawesome.com/e97a6a9c0b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+<!-- Modal -->
+<div class="modal fade search-auto-box " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content bg-header  p-4">
+      <div class="modal-header border-0 pl-3 pr-3">
+        <h5 class="modal-title" id="exampleModalLabel">Wyszukiwanie aut</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+<span></span>
+
+
+
+
+      <div class="modal-body ">
+<div class="border px-4 py-0 radius-8">
+   <div class="search-bar">
+    <input type="text" class="search-box" placeholder="45 mark, 350 modeli" autofocus />
+   </div>
+</div>
+   </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/audi.webp">
+      Audi</a>
+    </div>
+    <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/bmw.webp">
+      BMW</a>
+    </div>
+   <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/jeep.webp">
+      Jeep</a>
+    </div>
+     <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/mercedes.webp">
+      Mercedes</a>
+    </div>
+    <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/opel.webp">
+      Opel</a>
+    </div>
+    <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/subaru.webp">
+      Subaru</a>
+    </div>
+    <div class="col-md-4 py-2">
+      <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/honda.webp">
+      Honda</a>
+    </div>
+    <div class="col-md-4 py-2">
+     <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/toyota.webp">
+       Toyota</a>
+    </div>
+        <div class="col-md-4 py-2">
+     <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/jaguar.webp">
+       Jaguar</a>
+    </div>
+        <div class="col-md-4 py-2">
+     <a><img src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/kia.webp">
+       Kia</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- partial:index.partial.html -->
+<div class="job">
+ <div class="header">
+  <div class="logo">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path xmlns="http://www.w3.org/2000/svg" d="M512 503.5H381.7a48 48 0 01-45.3-32.1L265 268.1l-9-25.5 2.7-124.6L338.2 8.5l23.5 67.1L512 503.5z" fill="#0473ff" data-original="#28b446" />
+    <path xmlns="http://www.w3.org/2000/svg" fill="#0473ff" data-original="#219b38" d="M361.7 75.6L265 268.1l-9-25.5 2.7-124.6L338.2 8.5z" />
+    <path xmlns="http://www.w3.org/2000/svg" d="M338.2 8.5l-82.2 234-80.4 228.9a48 48 0 01-45.3 32.1H0l173.8-495h164.4z" fill="#0473ff" data-original="#518ef8" />
+   </svg>
+   Cars
+  </div>
+
+  <div class="user-settings">
+
+  <div class="header-menu">
+   <a href="#" class="active">Dostępne samochody</a>
+   <a href="#">Leasing</a>
+   <a href="#">Przedsprzedaż</a>
+  </div>
+
+   <div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+   </div>
+  
+   <img class="user-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png" alt="">
+  
+  </div>
+ </div>
+
+ <div class="wrapper">
+
+
+
+  <div class="search-menu">
+   <div class="search-bar" type="button" data-toggle="modal" data-target="#exampleModal">
+    <input type="text" class="search-box" placeholder="45 mark, 350 modeli"  />
+   </div>
+
+
+
+   <div class="search-location">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+     <circle cx="12" cy="10" r="3" />
+    </svg>
+    Cala Polska
+   </div>
+   <div class="search-job">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+     <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+     <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" /></svg>
+    <input type="text" placeholder="Job Type">
+   </div>
+   <div class="search-salary">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" stroke-width=".4">
+     <path d="M12.6 18H9.8a.8.8 0 010-1.5h2.8a.9.9 0 000-1.8h-1.2a2.4 2.4 0 010-4.7h2.8a.8.8 0 010 1.5h-2.8a.9.9 0 000 1.8h1.2a2.4 2.4 0 010 4.7z" stroke="currentColor" />
+     <path d="M12 20a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8zM12 11.5a.8.8 0 01-.8-.8v-2a.8.8 0 011.6 0v2c0 .5-.4.8-.8.8z" stroke="currentColor" />
+     <path d="M21.3 23H2.6A2.8 2.8 0 010 20.2V3.9C0 2.1 1.2 1 2.8 1h18.4C22.9 1 24 2.2 24 3.8v16.4c0 1.6-1.2 2.8-2.8 2.8zM2.6 2.5c-.6 0-1.2.6-1.2 1.3v16.4c0 .7.6 1.3 1.3 1.3h18.4c.7 0 1.3-.6 1.3-1.3V3.9c0-.7-.6-1.3-1.3-1.3z" stroke="currentColor" />
+     <path d="M23.3 6H.6a.8.8 0 010-1.5h22.6a.8.8 0 010 1.5z" stroke="currentColor" /></svg>
+    <input type="text" placeholder="Salary Range">
+   </div>
+   <button class="search-button">Szukaj</button>
+  </div>
+  <div class="main-container">
+   <div class="search-type">
+
+
+    <div class="job-time">
+     <div class="job-time-title">Type of Employment</div>
+     <div class="job-wrapper">
+      <div class="type-container">
+       <input type="checkbox" id="job1" class="job-style" checked>
+       <label for="job1">
+       	<img class="type-container-img" src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/audi.webp">Audi</label>
+       <span class="job-number">56</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job2" class="job-style">
+       <label for="job2">
+       	<img class="type-container-img" src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/bmw.webp">BMW</label>
+       <span class="job-number">43</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job3" class="job-style">
+       <label for="job3">
+       	<img class="type-container-img" src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/kia.webp">Kia</label>
+       <span class="job-number">24</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job4" class="job-style">
+       <label for="job4">
+       	<img class="type-container-img" src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/jeep.webp">Jeep</label>
+       <span class="job-number">27</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job5" class="job-style">
+       <label for="job5">
+       	<img class="type-container-img" src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/opel.webp">Opel</label>
+       <span class="job-number">76</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job6" class="job-style">
+       <label for="job6">
+       	<img class="type-container-img" src="https://autospot.ru/assets/b4acd326/img/as-c-brand-logo/toyota.webp">Toyota</label>
+       <span class="job-number">28</span>
+      </div>
+     </div>
+    </div>
+    <div class="job-time">
+     <div class="job-time-title">Seniority Level</div>
+     <div class="job-wrapper">
+      <div class="type-container">
+       <input type="checkbox" id="job7" class="job-style">
+       <label for="job7">Student Level</label>
+       <span class="job-number">98</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job8" class="job-style">
+       <label for="job8">Entry Level</label>
+       <span class="job-number">44</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job9" class="job-style" checked>
+       <label for="job9">Mid Level</label>
+       <span class="job-number">35</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job10" class="job-style" checked>
+       <label for="job10">Senior Level</label>
+       <span class="job-number">29</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job11" class="job-style">
+       <label for="job11">Directors</label>
+       <span class="job-number">26</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job12" class="job-style">
+       <label for="job12">VP or Above</label>
+       <span class="job-number">56</span>
+      </div>
+     </div>
+    </div>
+    <div class="job-time">
+     <div class="job-time-title">Salary Range</div>
+     <div class="job-wrapper">
+      <div class="type-container">
+       <input type="checkbox" id="job1" class="job-style">
+       <label for="job1">$700 - $1000</label>
+       <span class="job-number">49</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job2" class="job-style">
+       <label for="job2">$1000 - $1200</label>
+       <span class="job-number">67</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job3" class="job-style">
+       <label for="job3">$1200 - $1400</label>
+       <span class="job-number">24</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job4" class="job-style">
+       <label for="job4">$1500 - $1800</label>
+       <span class="job-number">27</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job5" class="job-style" checked>
+       <label for="job5">$2000 - $3000</label>
+       <span class="job-number">76</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job6" class="job-style" checked>
+       <label for="job6">$3000 - $4000</label>
+       <span class="job-number">22</span>
+      </div>
+      <div class="type-container">
+       <input type="checkbox" id="job6" class="job-style">
+       <label for="job6">$4000 - $5000</label>
+       <span class="job-number">18</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="searched-jobs">
+    <div class="searched-bar">
+     <div class="searched-show">Znaleźliśmy 64 samochody</div>
+     <div class="searched-sort">Sort by: <span class="post-time">Newest Post </span><span class="menu-icon">▼</span></div>
+    </div>
+    <div class="job-cards">
+     <div class="job-card">
+     <button class="search-buttons detail-button bg-new mt-0">Nowosc</button>
+     <button class="search-buttons detail-button bg-rabat mt-0">Bestseller</button>
+     
+      <div class="job-card-header mt-3">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/6/461490/origin/461490.webp" >
+      </div>
+
+      
+      <div class="job-card-title"><div class="position-relative display-inline">Audi A3</div> <div class="menu-dot"></div></div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button ">80 samochodów </button> <span>od 1 200 000 zl</span>
+      </div>
+      <div class="job-card-subtitle">
+       <div class="pb-1"><div class="div-color" style="background: white;"></div>Bialy, metalika (Glacier White)</div>
+       <a class="mb-3 text-secondary">W kredyt za 25 208 zl/m</a>
+      </div>
+ 
+     
+
+     </div>
+     <div class="job-card">
+          <button class="search-buttons detail-button bg-bestseller mt-0">Zniżką nawet 24 000 zl</button>
+     <button class="search-buttons detail-button bg-rabat mt-0">Bestseller</button>
+      <div class="job-card-header mt-3">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/9/5/956832/origin/956832.webp" >
+      </div>
+      <div class="job-card-title"><div class="position-relative display-inline">Audi A4</div> <div class="menu-dot"></div></div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button ">80 samochodów </button> <span>od 1 200 000 zl</span>
+      </div>
+      <div class="job-card-subtitle">
+       <div class="pb-1"><div class="div-color" style="background: #b86738;"></div>Bialy, metalika (Glacier White)</div>
+       <a class="mb-3 text-secondary">W kredyt za 25 208 zl/m</a>
+      </div>
+
+
+     </div>
+     <div class="job-card">
+           <button class="search-buttons detail-button bg-bestseller mt-0">Zniżką nawet 24 000 zl</button>
+     <button class="search-buttons detail-button bg-rabat mt-0">Bestseller</button>
+      <div class="job-card-header mt-3">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/1/0/1015793/origin/1015793.webp" >
+      </div>
+      <div class="job-card-title"><div class="position-relative display-inline">Audi A4</div> <div class="menu-dot"></div></div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button ">80 samochodów </button> <span>od 1 200 000 zl</span>
+      </div>
+      <div class="job-card-subtitle">
+       <div class="pb-1"><div class="div-color" style="background: #b86738;"></div>Bialy, metalika (Glacier White)</div>
+       <a class="mb-3 text-secondary">W kredyt za 25 208 zl/m</a>
+      </div>
+
+     </div>
+     <div class="job-card">
+           <button class="search-buttons detail-button bg-bestseller mt-0">Zniżką nawet 24 000 zl</button>
+     <button class="search-buttons detail-button bg-rabat mt-0">Bestseller</button>
+      <div class="job-card-header mt-3">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/6/461490/origin/461490.webp" >
+      </div>
+      <div class="job-card-title"><div class="position-relative display-inline">Audi A3</div> <div class="menu-dot"></div></div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button ">80 samochodów </button> <span>od 1 200 000 zl</span>
+      </div>
+      <div class="job-card-subtitle">
+       <div class="pb-1"><div class="div-color" style="background: blue;"></div>Bialy, metalika (Glacier White)</div>
+       <a class="mb-3 text-secondary">W kredyt za 25 208 zl/m</a>
+      </div>
+
+     </div>
+     <div class="job-card">
+      <div class="menu-dot"></div>
+      <div class="job-card-header">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/6/461490/origin/461490.webp" >
+      </div>
+      <div class="job-card-title"><div class="position-relative display-inline">Audi A5 Allroad</div> <div class="menu-dot"></div></div>
+      <div class="job-card-subtitle">
+       The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+      </div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button ">80 samochodów</button>
+      </div>
+
+     </div>
+     <div class="job-card">
+      <div class="menu-dot"></div>
+      <div class="job-card-header">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/7/475564/origin/475564.webp" >
+      </div>
+      <div class="job-card-title"><div class="position-relative display-inline">Audi A5</div> <div class="menu-dot"></div></div>
+      <div class="job-card-subtitle">
+       The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+      </div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button ">80 samochodów</button>
+      </div>
+
+     </div>
+     <div class="job-card">
+      <div class="menu-dot"></div>
+      <div class="job-card-header">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/6/461490/origin/461490.webp" >
+      </div>
+      <div class="job-card-title">User Interface Designer</div>
+      <div class="job-card-subtitle">
+       The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+      </div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button">280 samochodów</button>
+       <button class="search-buttons detail-button">Min. 1 Year</button>
+       <button class="search-buttons detail-button">Senior Level</button>
+      </div>
+
+     </div>
+     <div class="job-card">
+      <div class="menu-dot"></div>
+      <div class="job-card-header">
+       <img alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/7/475564/origin/475564.webp" >
+      </div>
+      <div class="job-card-title">UI / UX Designer</div>
+      <div class="job-card-subtitle">
+       The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+      </div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button">Full Time</button>
+       <button class="search-buttons detail-button">Min. 1 Year</button>
+       <button class="search-buttons detail-button">Senior Level</button>
+      </div>
+
+     </div>
+     <div class="job-card">
+      <div class="menu-dot"></div>
+      <div class="job-card-header">
+       <img class="" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/6/461490/origin/461490.webp" >
+      </div>
+      <div class="job-card-title">UX Designer</div>
+      <div class="job-card-subtitle">
+       The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+      </div>
+      <div class="job-detail-buttons">
+       <button class="search-buttons detail-button">Full Time</button>
+       <button class="search-buttons detail-button">Min. 1 Year</button>
+       <button class="search-buttons detail-button">Senior Level</button>
+      </div>
+
+     </div>
+    </div>
+    <div class="job-overview">
+     <div class="job-overview-cards">
+
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/6/461490/origin/461490.webp" >
+         <div class="overview-detail">
+          <div class="job-card-title">Audi A3</div>
+          <div class="job-card-subtitle">
+          
+          </div>
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z"/></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/7/475846/origin/475846.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">Audi A4</div>
+
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+      
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/7/475837/origin/475837.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">Audi A4 Avanto</div>
+
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/9/5/956832/origin/956832.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">Audi A4 allroad</div>
+
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/7/475564/origin/475564.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">Audi A5 Coupé</div>
+
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/4/7/475587/origin/475587.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">Audi A5 Sportback</div>
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/1/0/1015793/origin/1015793.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">UI / UX Designer</div>
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Full Time</div>
+         <div class="search-buttons level-button">Senior Level</div>
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/1/0/1015793/origin/1015793.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">UI / UX Designer</div>
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Full Time</div>
+         <div class="search-buttons level-button">Senior Level</div>
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+      <div class="job-overview-card">
+       <div class="job-card overview-card">
+        <div class="overview-wrapper">
+<img class="overview-wrapper-img" alt="car" src="https://image-server.autospot.ru/images/1/0/2/2/1/0/1015793/origin/1015793.webp">
+         <div class="overview-detail">
+          <div class="job-card-title">UI / UX Designer</div>
+
+         </div>
+        </div>
+        <div class="job-overview-buttons">
+         <div class="search-buttons time-button">Od 20 000 zl </div>
+         <div class="search-buttons level-button">280 samochodów</div>
+         <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="job-explain">
+      <div class="w-100 position-relative mark-katal"><span class="back-car cursor"><i class="fas fa-arrow-left pr-2 f-13"></i> 
+        Katalog samochodó</span> <span class="pal">/</span><span class="cursor model-car">Modele</span><span class="pal">/</span>
+        <span class="cursor">BMW</span><span class="pal">/</span><span class="cursor">Audi A3</span><span class="pal">/</span> <span class="opcia">318i</span>
+         <div class="w-auto display-inline mark-aut">BMW 3 Sedan (318i)</div>
+      </div>
+      <div class="row">
+      <div class="col-4 contact-form">
+        <div class="contact-form-inside d-flex flex-column bd-highlight">
+ 
+    <div class="row contact-info bd-highlight mb-auto">
+      <p class="w-100 contact-title">Charakterystyka</p>
+      <div class="col-6">
+        <i class="fas fa-gas-pump"></i><p><span>Коробка передоч<br></span> Автомат</p>
+      </div>
+       <div class="col-6">
+       <i class="fab fa-stumbleupon-circle"></i><p><span>Коробка передоч<br></span> Автомат</p>
+      </div>
+      <div class="col-6">
+        <i class="fas fa-stopwatch"></i><p><span>Коробка передоч<br></span> Автомат</p>
+      </div>
+     <div class="col-6">
+        <i class="fas fa-calendar-alt"></i><p><span>Коробка передоч<br></span> Автомат</p>
+      </div>
+          <div class="col-6">
+        <i class="fas fa-horse-head"></i><p><span>Коробка передоч<br></span> Автомат</p>
+      </div>
+         
+      <div class="col-6">
+       <i class="fas fa-circle"></i><p><span>Коробка передоч<br></span> Автомат</p>
+      </div>
+    </div>
+
+
+
+     <div class="job-card-buttons mt-auto bd-highlight">
+       <button class="search-buttons card-buttons">Więcej informacji</button>
+       <!-- <button class="search-buttons card-buttons-msg">W kredyt (2 100/m)</button>-->  
+      </div>  
+        </div>
+
+      </div>
+      <div class="col d-flex align-items-center">
+      <img class="job-bg" alt="car">
+      </div>
+      </div>
+
+      <div class="job-explain-content">
+      <div class="job-title-wrapper">
+       <div class="job-card-title">UI /UX Designer</div>
+       <div class="job-action">
+        <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+          <path d="M20.8 4.6a5.5 5.5 0 00-7.7 0l-1.1 1-1-1a5.5 5.5 0 00-7.8 7.8l1 1 7.8 7.8 7.8-7.7 1-1.1a5.5 5.5 0 000-7.8z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+       </div>
+       </div>
+       <div class="job-subtitle-wrapper">
+        <div class="company-name"><i class="fas fa-map-marker-alt pr-2"></i>Opole <span class="comp-location">Zostalo 4 auta</span></div>
+        <div class="posted"><span class="app-number"> <span class="raba">2 200 000 zl</span><br>2 200 000 zl</div>
+       </div>
+       <div class="explain-bar">
+        <div class="explain-contents">
+        <div class="explain-title">Experience</div>
+        <div class="explain-subtitle">Minimum 1 Year</div>
+         </div>
+        <div class="explain-contents">
+        <div class="explain-title">Kolor</div>
+        <div class="explain-subtitle"><div class="pb-1"><div class="div-color" style="background: white;"></div>Bialy, metalika (Glacier White)</div></div>
+         </div>
+        <div class="explain-contents">
+        <div class="explain-title">Cena</div>
+        <div class="explain-subtitle">2 000 000 zl</div>
+         </div>
+        <div class="explain-contents">
+        <div class="explain-title">Cena</div>
+        <div class="explain-subtitle">2 000 000 zl</div>
+         </div>
+        <div class="explain-contents">
+        <div class="explain-title">Miesięcznie</div>
+        <div class="explain-subtitle"> 2500 zl / m</div>
+         </div>
+       </div>
+       <div class="overview-text">
+        <div class="overview-text-header">Overview</div>
+        <div class="overview-text-subheader">We believe that design (and you) will be critical to the company's success. You will work with our founders and our early customers to help define and build our product functionality, while maintaining the quality bar that customers have come to expect from modern SaaS applications. You have a strong background in product design with a quantitavely anf qualitatively analytical mindset. You will also have the opportunity to craft our overall product and visual identity and should be comfortable to flex into working.</div>
+       </div>
+       <div class="overview-text">
+        <div class="overview-text-header">Job Description</div>
+        <div class="overview-text-item">3+ years working as a product designer.</div>
+        <div class="overview-text-item">A portfolio that highlights your approach to problem solving, as well as you skills in UI.</div>
+        <div class="overview-text-item">Experience conducting research and building out smooth flows.</div>
+        <div class="overview-text-item">Excellent communication skills with a well-defined design process.</div>
+        <div class="overview-text-item">Familiarity with design tools like Sketch and Figma</div>
+        <div class="overview-text-item">Up-level our overall design and bring consistency to end-user facing properties</div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<!-- partial -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
